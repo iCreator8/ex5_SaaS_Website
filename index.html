@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="my cool website two">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/988097ee2b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css_files/default.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Front Website</title>
+  </head>
+
+  <body>
+    <!-- navbar area controls  -->
+    <nav id="topNav" class="navbar nav">
+      <div class="container">
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown"><span>&#9776;</span></button>
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <ul class="navbar-nav">
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">Features</a></li>
+          <li class="nav-link"><a href="#">Learn</a></li>
+          <li class="nav-link"><a href="#">Pricing</a></li>
+          <li class="nav-link"><a href="#">Hire us</a></li>
+        </ul>
+        <div class="btn"><a href="#">Buy Now</a></div>
+      </div>
+    </nav>
+
+
+    <!-- JS code for NavBar area only  -->
+    <script>const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      }
+
+      const navButton = document.querySelector('button[aria-expanded]');
+
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+
+      navButton.addEventListener('click', toggleNav);
+    </script>
+  </body>
+
+</html>
