@@ -1,0 +1,310 @@
+.home-page {
+	background: linear-gradient(to bottom, var(--white) 35%, var(--vector-bg1) 65%);
+	/* background-image: linear-gradient(to bottom, red 10%, blue 90%); */
+	display: grid;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.home-page:before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: var(--vector-bg2);
+	left: 78%;
+	transform: skewX(-20deg);
+}
+
+.home-page:after {
+	content: "";
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	top: 82%;
+	background-color: var(--white);
+	transform: skewY(-6deg);
+	/* z-index: -1; */
+}
+
+/* Header and navbar area controls  */
+.navbar > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: var(--size-90);
+}
+
+.navbar img {
+	height: var(--size-60);
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 10;
+}
+
+.navbar li {
+	padding-right: 1rem;
+	padding-left: 1rem;
+	font-weight: 500;
+}
+
+.navbar a {
+	align-self: center;
+	color: var(--font-color-base);
+}
+
+.navbar a:hover {
+	color: var(--main-color-blue);
+}
+
+.navbar li.CTA-1 {
+	background-color: var(--main-color-blue);
+	height: var(--size-50);
+	width: var(--size-120);
+	margin-left: 1.75rem;
+	display: inline-flex;
+	justify-content: center;
+	z-index: 10;
+}
+
+.navbar li.CTA-1 > a {
+	color: var(--white);
+}
+
+.navbar-nav li:nth-child(2) a {
+	color: blue;
+}
+
+/* Main Page controls here  */
+section.main-page {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	position: relative;
+	height: 100vh;
+}
+
+.main-page-text {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	padding-top: var(--size-200);
+}
+
+.main-page-text h1 {
+	font-size: var(--size-50);
+	width: 60%;
+	font-weight: 450;
+	line-height: initial;
+	color: var(--black);
+	margin: 0;
+}
+
+.main-page-text p {
+	font-size: var(--size-16);
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.cta-area {
+	display: flex;
+	align-items: center;
+}
+
+.cta-area .CTA-2 {
+	background-color: var(--main-color-blue);
+	width: var(--size-150);
+	height: var(--size-50);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white);
+	font-size: var(--size-14);
+}
+
+.cta-area i {
+	padding-right: 0.5rem;
+	font-size: var(--size-18);
+}
+
+.cta-area a {
+	color: var(--main-color-blue);
+	font-weight: 600;
+	margin-left: 2rem;
+}
+
+.main-page-logos {
+	height: 100%;
+}
+
+.main-page-logos .google {
+	background-image: url("/assets/logo_icons/google.png");
+	background-size: 80% 80%;
+	background-position: center;
+	background-color: var(--white);
+	width: 4rem;
+	height: 4rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+
+	position: absolute;
+	top: 10%;
+	right: 40%;
+	z-index: 10;
+}
+
+.main-page-logos .atlassian {
+	background-image: url("/assets/logo_icons/atlassian.png");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 6rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	top: 10%;
+	right: 23%;
+	z-index: 10;
+}
+
+.main-page-logos .asana {
+	background-image: url("/assets/logo_icons/asana.png");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 6rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	right: 5%;
+	top: 10%;
+	z-index: 10;
+}
+
+.main-page-logos .paypal {
+	background-image: url("/assets/logo_icons/paypal.jpg");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 6rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	bottom: 47%;
+	right: 40%;
+	z-index: 10;
+}
+
+.main-page-logos .weave {
+	background-image: url("/assets/logo_icons/weave.png");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 6rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	right: 15%;
+	bottom: 42%;
+	z-index: 10;
+}
+
+.main-page-logos .google-a {
+	background-image: url("/assets/logo_icons/google-A.png");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 4rem;
+	height: 4rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	right: 26%;
+	top: 62%;
+	z-index: 10;
+}
+
+.main-page-logos .calendar {
+	background-image: url("/assets/logo_icons/calendar.png");
+	background-size: 60% 60%;
+	background-position: center;
+	background-color: var(--white);
+	width: 6rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 7px rgba(212, 209, 212);
+	position: absolute;
+	right: 10%;
+	bottom: 18%;
+	z-index: 10;
+}
+
+/* Benefit Page controls starts here  */
+.benefit-page {
+	position: relative;
+}
+
+.benefit-texts {
+	text-align: center;
+}
+
+.benefit-texts h1 {
+	font-size: var(--size-32);
+	color: var(--font-color-dark);
+	margin-bottom: 0;
+}
+
+.benefit-texts h3 {
+	margin-top: 0;
+}
+
+.benefit-cards img {
+	width: 4rem;
+}
+
+.benefit-cards h3 {
+	color: var(--font-color-dark);
+}
+
+.benefit-cards h4 > a {
+	color: var(--main-color-blue);
+}
+
+.responsive-card,
+.customazable-card,
+.premium-card,
+.documentation-card {
+	/* width: 300px; */
+	height: 440px;
+	box-shadow: 0px 10px 15px 5px rgba(212, 209, 212);
+	padding: var(--size-28);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.benefit-cards {
+	margin-top: 6rem;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-rows: 1fr;
+}

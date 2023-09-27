@@ -15,27 +15,97 @@
     <script src="https://kit.fontawesome.com/988097ee2b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css_files/default.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css_files/styles.css">
+    <link rel="stylesheet" href="./css_files/responsive.css">
     <title>Front Website</title>
   </head>
 
   <body>
-    <!-- navbar area controls  -->
-    <nav id="topNav" class="navbar nav">
-      <div class="container">
-        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown"><span>&#9776;</span></button>
-        <a class="navbar-brand" href="index.html">LOGO</a>
-        <ul class="navbar-nav">
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#">Features</a></li>
-          <li class="nav-link"><a href="#">Learn</a></li>
-          <li class="nav-link"><a href="#">Pricing</a></li>
-          <li class="nav-link"><a href="#">Hire us</a></li>
-        </ul>
-        <div class="btn"><a href="#">Buy Now</a></div>
+
+    <div class="home-page">
+      <!-- navbar area controls  -->
+      <nav id="topNav" class="navbar nav">
+        <div class="container">
+          <!-- <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown"><span>&#9776;</span></button> -->
+          <a class="navbar-brand" href="index.html"><img src="assets\project_logo\logo.svg" alt="Main Logo"></a>
+          <ul class="navbar-nav">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link" id="features"><a href="#">Features</a></li>
+            <li class="nav-link"><a href="#">Learn</a></li>
+            <li class="nav-link"><a href="#">Pricing</a></li>
+            <li class="nav-link"><a href="#">Hire us</a></li>
+            <li class="CTA-1 btn"><a href="#">Buy Now</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="main-page container">
+
+        <div class="main-page-text">
+          <h1>Empowering teams with the freedom</h1>
+          <p>Own the unlimited power of the web development</p>
+          <div class="cta-area">
+            <div class="CTA-2 btn"><i class="fa-solid fa-circle-play"></i>Play Video</div>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <div class="main-page-logos">
+          <div class="google"></div>
+          <div class="atlassian"></div>
+          <div class="asana"></div>
+          <div class="paypal"></div>
+          <div class="weave"></div>
+          <div class="google-a"></div>
+          <div class="calendar"></div>
+        </div>
+
+      </section>
+    </div>
+
+
+    <section class="benefit-page container">
+
+      <div class="benefit-texts">
+        <h1>Key Benefits</h1>
+        <h3>Design faster with a growing array of beautiful templates</h3>
       </div>
-    </nav>
+
+      <div class="benefit-cards">
+        <div class="responsive-card">
+          <img src="assets/key_benefits_icons/responsive.png" alt="responsive image">
+          <h3>Responsive</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio blanditiis nam perferendis, aliquid veritatis, quibusdam sapiente, illo sit minus accusamus commodi consectetur eligendi.</p>
+          <h4><a href="#">Learn more</a></h4>
+        </div>
+
+        <div class="customazable-card">
+          <img src="assets/key_benefits_icons/customize.png" alt="customizable image">
+          <h3>Customazable</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio blanditiis nam perferendis, aliquid veritatis, quibusdam sapiente, illo sit minus accusamus commodi consectetur eligendi.</p>
+          <h4><a href="#">Learn more</a></h4>
+        </div>
+
+        <div class="premium-card">
+          <img src="assets/key_benefits_icons/premium.png" alt="premium image">
+          <h3>Premium <span>sketch</span></h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio blanditiis nam perferendis, aliquid veritatis, quibusdam sapiente, illo sit minus accusamus commodi consectetur eligendi.</p>
+          <h4><a href="#">Learn more</a></h4>
+        </div>
+
+        <div class="documentation-card">
+          <img src="assets/key_benefits_icons/documentaiton.png" alt="documentattion image">
+          <h3>Documentation</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio blanditiis nam perferendis, aliquid veritatis, quibusdam sapiente, illo sit minus accusamus commodi consectetur eligendi.</p>
+          <h4><a href="#">Learn more</a></h4>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
 
 
     <!-- JS code for NavBar area only  -->
@@ -57,6 +127,7 @@
 
       navButton.addEventListener('click', toggleNav);
     </script>
+
   </body>
 
 </html>
