@@ -1,0 +1,910 @@
+/* Screens above 1440px  */
+@media (min-width: 1450px) {
+	[aria-controls="navbarDropdown"] {
+		display: none;
+	}
+
+	.container {
+		width: 80%;
+		padding-left: clamp(1rem, 1.5rem + 1vw, 3rem);
+		padding-right: clamp(1rem, 1.5rem + 1vw, 3rem);
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.navbar > div {
+		margin-top: 2rem;
+	}
+
+	.navbar.sticky {
+		padding-bottom: 2rem;
+	}
+
+	.pricing-cards-small {
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	}
+}
+
+/* Screens 767px and above and below 1025px  */
+@media (min-width: 767px) and (max-width: 1025px) {
+	/* Drop down Menu controls here  ----------------------------------------------------------------*/
+	.navbar-toggler {
+		display: block;
+		position: absolute;
+		right: 3%;
+		top: 25%;
+		outline: none;
+		background: transparent;
+		border: 1px solid transparent;
+		z-index: 100;
+	}
+
+	.navbar-toggler span {
+		color: var(--font-color-base);
+		font-size: 30px;
+		pointer-events: none;
+		cursor: pointer;
+	}
+
+	.navbar-brand {
+		transition: ease-in-out 0.3s;
+		z-index: 100;
+	}
+
+	[aria-controls="navbarDropdown"] {
+		display: block;
+	}
+
+	[aria-expanded="false"] ~ ul {
+		display: none;
+	}
+
+	[aria-expanded="true"] ~ ul {
+		background-color: var(--white);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-top: 8rem;
+		padding-left: 6rem;
+		padding-right: 6rem;
+		transition: ease-in-out 0.5s;
+		z-index: 0;
+	}
+
+	.navbar li {
+		padding-top: 10%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	.navbar a {
+		font-size: clamp(0.2rem, 0.5rem + 1vw, 1.75rem);
+	}
+
+	.navbar li.CTA-1 {
+		width: 12%;
+		position: absolute;
+		margin-top: 20%;
+		padding: 0;
+	}
+
+	/* Main Page contents controls here ----------------------------------------------------------------  */
+	.home-page:before {
+		left: 67%;
+	}
+
+	.home-page:after {
+		min-height: 50%;
+		top: 60%;
+	}
+
+	section.main-page {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "mainPageText" "mainPageLogos";
+	}
+
+	.main-page-text {
+		align-items: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		padding-top: 20%;
+	}
+
+	.main-page-text h1 {
+		text-align: center;
+		font-size: var(--fluid-size-5);
+		width: 70%;
+	}
+
+	.main-page-logos .google {
+		top: 16%;
+		right: 15%;
+	}
+
+	.main-page-logos .atlassian {
+		top: 15%;
+		left: 40%;
+	}
+
+	.main-page-logos .asana {
+		top: 20%;
+		right: 15%;
+	}
+
+	.main-page-logos .paypal {
+		top: 50%;
+		left: 10%;
+	}
+
+	.main-page-logos .weave {
+		top: 50%;
+		right: 35%;
+	}
+
+	.main-page-logos .google-a {
+		top: 80%;
+	}
+
+	.main-page-logos .calendar {
+		top: 80%;
+		right: 17%;
+	}
+
+	/* Benefit Page controls starts here ----------------------------------------------------------------  */
+	.benefit-page {
+		min-height: 85vh;
+	}
+
+	.benefit-cards {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	/* Video Section controls starts here ---------------------------------------------------------------- */
+	.video-page {
+		min-height: 62vh;
+		flex-direction: column;
+		position: relative;
+		justify-content: space-between;
+	}
+
+	.video-texts {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+
+	.video-texts h2 {
+		font-size: var(--size-25);
+	}
+
+	.CTA-3 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.video-image {
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	/* Why Front Section controls Area ---------------------------------------------------------------- */
+	.why-front {
+		width: 80%;
+		min-height: 40vh;
+	}
+
+	.why-front-texts {
+		margin-top: 6rem;
+	}
+
+	.C-1,
+	.C-2,
+	.C-3,
+	.C-4 {
+		border: 1.35rem solid #ecf2ff;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.why-front-flow h3 {
+		width: 30%;
+		margin-top: 4.5rem;
+		font-size: clamp(0.5rem, 1rem, 1.5rem);
+	}
+
+	/* Play video section ----------------------------------------------------------------  */
+	.play-video .play {
+		height: clamp(2rem, 4rem + 1vw, 8rem);
+		width: clamp(2rem, 4rem + 1vw, 8rem);
+	}
+
+	.play i {
+		font-size: clamp(var(--size-16), var(--size-20), var(--size-40));
+	}
+
+	/* Hubspot section controls ---------------------------------------------------------------- */
+	.hubspot {
+		flex-direction: column;
+		margin-top: 6rem;
+		min-height: 70vh;
+	}
+
+	.image-area img:nth-child(2) {
+		bottom: -3rem;
+	}
+
+	.text-area {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10rem;
+		width: 90%;
+		padding-left: 0;
+	}
+
+	img.hubspot-icon {
+		width: clamp(10%, 20% + 1vw, 50%);
+	}
+
+	.text-area h3 {
+		margin-bottom: 1rem;
+		font-size: var(--fluid-size-0);
+		text-align: center;
+	}
+
+	/* Company Icons controls area ---------------------------------------------------------------- */
+	.company-icons {
+		min-height: 20vh;
+	}
+
+	.logos-area > img {
+		height: clamp(0.5rem, 1rem + 1vw, 2rem);
+	}
+
+	/* Priciing Section controls here ----------------------------------------------------------------  */
+	.pricing-area {
+		min-height: 80vh;
+		margin-bottom: 4rem;
+	}
+
+	.pricing-cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.price-card-main {
+		width: 100%;
+		margin-right: 0;
+		align-items: center;
+	}
+
+	.price-card-main .CTA-4 {
+		margin-top: 4rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.pricing-cards-small {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	/* Hire and form section controls ---------------------------------------------------------------- */
+	.hire-form-area {
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		min-height: 90vh;
+	}
+
+	.hire-area {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hire-us-partOne > h4 {
+		width: 100%;
+	}
+
+	.policies {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* footer section controls ---------------------------------------------------------------- */
+	.footer-navigator {
+		grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+		gap: 3rem;
+		width: 60%;
+	}
+}
+
+/* Screens 320px and above and below 768px ---------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+	/* Drop down Menu controls here  */
+	.navbar img {
+		height: 2.5rem;
+	}
+
+	.navbar-toggler {
+		display: block;
+		position: absolute;
+		right: 3%;
+		top: 25%;
+		outline: none;
+		background: transparent;
+		border: 1px solid transparent;
+		z-index: 100;
+	}
+
+	.navbar-toggler span {
+		color: var(--font-color-base);
+		font-size: 30px;
+		pointer-events: none;
+		cursor: pointer;
+	}
+
+	.navbar-brand {
+		transition: ease-in-out 0.3s;
+		z-index: 100;
+	}
+
+	[aria-controls="navbarDropdown"] {
+		display: block;
+	}
+
+	[aria-expanded="false"] ~ ul {
+		display: none;
+	}
+
+	[aria-expanded="true"] ~ ul {
+		background-color: var(--white);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100vh;
+		transition: ease-in-out 0.5s;
+		z-index: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar li {
+		padding-top: 7%;
+	}
+
+	.navbar a {
+		font-size: var(--fluid-size-2);
+	}
+
+	.navbar li.CTA-1 {
+		width: 30%;
+		margin-top: 7%;
+		padding: 0;
+	}
+	.navbar li.CTA-1 > a {
+		font-size: var(--fluid-size--1);
+	}
+
+	/* Main Page contents controls here ----------------------------------------------------------------  */
+	.home-page:before {
+		left: 50%;
+	}
+
+	.home-page:after {
+		min-height: 50%;
+		top: 70%;
+	}
+
+	section.main-page {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "mainPageText" "mainPageLogos";
+	}
+
+	.main-page-text {
+		align-items: center;
+		padding-top: 20%;
+		margin-top: 20%;
+	}
+
+	.main-page-text h1 {
+		text-align: center;
+		font-size: var(--fluid-size-4);
+		width: 100%;
+	}
+
+	.main-page-text p {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+		font-size: clamp(0.25rem, 0.75rem, 1rem);
+	}
+
+	.cta-area .CTA-2 {
+		min-height: clamp(var(--size-40), var(--size-40), var(--size-80));
+		width: clamp(var(--size-100), var(--size-120), var(--size-200));
+		font-size: clamp(10%, 50% + 1vw, 100%);
+	}
+
+	.cta-area i {
+		padding-right: 0.5rem;
+		font-size: clamp(10%, 70% + 1vw, 150%);
+	}
+
+	.main-page-logos .google {
+		top: 16%;
+		right: auto;
+		left: 0;
+	}
+
+	.main-page-logos .atlassian {
+		top: 15%;
+		left: 30%;
+	}
+
+	.main-page-logos .asana {
+		top: 15%;
+		right: 0;
+	}
+
+	.main-page-logos .paypal {
+		top: 50%;
+		left: 0;
+	}
+
+	.main-page-logos .weave {
+		top: 45%;
+		right: 25%;
+	}
+
+	.main-page-logos .google-a {
+		top: 80%;
+	}
+
+	.main-page-logos .calendar {
+		top: 75%;
+		right: 0;
+	}
+
+	/* Benefit Page controls starts here ----------------------------------------------------------------  */
+	.benefit-page {
+		min-height: 85vh;
+	}
+
+	.benefit-cards {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		margin-top: 15%;
+	}
+
+	.benefit-texts h2 {
+		font-size: var(--fluid-size-3);
+	}
+
+	.benefit-texts h3 {
+		font-size: var(--fluid-size-0);
+	}
+
+	.benefit-cards img {
+		width: clamp(10%, 10% + 1vw, 100%);
+	}
+
+	.benefit-cards h4 {
+		font-size: var(--fluid-size-0);
+	}
+
+	.benefit-cards p {
+		font-size: var(--fluid-size--1);
+	}
+
+	.benefit-cards h4 > a {
+		font-size: var(--fluid-size--2);
+	}
+
+	/* Video Section controls starts here ---------------------------------------------------------------- */
+	.video-page {
+		min-height: 62vh;
+		flex-direction: column;
+		position: relative;
+		justify-content: space-between;
+	}
+
+	.video-texts {
+		width: 80%;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+
+	.video-texts h2 {
+		font-size: var(--fluid-size-4);
+	}
+
+	.video-texts .CTA-3 {
+		margin-left: auto;
+		margin-right: auto;
+		min-height: clamp(var(--size-40), var(--size-40), var(--size-80));
+		width: clamp(var(--size-100), var(--size-120), var(--size-200));
+		font-size: clamp(10%, 50% + 1vw, 100%);
+	}
+
+	.CTA-3 i {
+		font-size: clamp(10%, 60% + 1vw, 100%);
+	}
+
+	.video-image {
+		width: 100%;
+	}
+
+	/* Why Front Section controls Area ---------------------------------------------------------------- */
+	.why-front {
+		width: 90%;
+		min-height: 65vh;
+		padding-bottom: 2rem;
+	}
+
+	.why-front-texts {
+		margin-top: 6rem;
+	}
+
+	.why-front-texts h2 {
+		font-size: var(--fluid-size-3);
+	}
+
+	.why-front-texts h3 {
+		font-size: var(--fluid-size-0);
+	}
+
+	div.why-front-flow {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		margin-top: 0;
+	}
+
+	div.just-line {
+		display: none;
+	}
+
+	.circle-1,
+	.circle-2,
+	.circle-3,
+	.circle-4 {
+		width: 100%;
+		flex-direction: row;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		align-self: flex-start;
+	}
+
+	.C-1,
+	.C-2,
+	.C-3,
+	.C-4 {
+		border: 1.35rem solid #ecf2ff;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.why-front-flow h3 {
+		width: 100%;
+		font-size: var(--fluid-size-0);
+		position: relative;
+		margin-top: auto;
+		padding-left: 10%;
+		text-align: start;
+	}
+
+	/* Play video section ----------------------------------------------------------------  */
+	.play-video .play {
+		height: clamp(2rem, 3rem + 1vw, 8rem);
+		width: clamp(2rem, 3rem + 1vw, 8rem);
+		top: 30%;
+		left: 44%;
+	}
+
+	.play i {
+		font-size: clamp(var(--size-10), var(--size-16), var(--size-30));
+	}
+
+	/* Hubspot section controls ---------------------------------------------------------------- */
+	.hubspot {
+		flex-direction: column;
+		margin-top: 3rem;
+		min-height: 70vh;
+	}
+
+	.image-area {
+		width: 100%;
+	}
+
+	.image-area img:nth-child(2) {
+		bottom: -2rem;
+	}
+
+	.text-area {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5rem;
+		width: 90%;
+		padding-left: 0;
+	}
+
+	img.hubspot-icon {
+		width: clamp(10%, 20% + 1vw, 50%);
+	}
+
+	.text-area h3 {
+		margin-bottom: 1rem;
+		font-size: var(--fluid-size-0);
+		text-align: center;
+	}
+
+	/* Company Icons controls area ---------------------------------------------------------------- */
+	.company-icons {
+		min-height: 50vh;
+	}
+
+	.logos-area {
+		flex-direction: column;
+	}
+
+	.logos-area > img {
+		height: clamp(0.5rem, 1.5rem + 1vw, 2rem);
+		margin-bottom: 10%;
+	}
+
+	/* Priciing Section controls here ----------------------------------------------------------------  */
+	.pricing-area {
+		margin-bottom: 4rem;
+	}
+
+	.pricing-cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pricing-text h2 {
+		font-size: var(--fluid-size-3);
+	}
+
+	.pricing-text h3 {
+		font-size: var(--fluid-size-0);
+	}
+
+	.price-card-main {
+		width: 100%;
+		margin-right: 0;
+		align-items: center;
+	}
+
+	.pricing-cards .price-card-main h2 {
+		font-size: var(--fluid-size-5);
+		margin-bottom: 1rem;
+	}
+
+	.price-card-main h2 > span {
+		font-size: var(--fluid-size-0);
+	}
+
+	.pricing-cards .price-card-main h3 {
+		font-size: clamp(25%, 30% + 1vw, 150%);
+		font-size: var(--fluid-size-0);
+	}
+
+	.price-card-main .CTA-4 {
+		min-height: clamp(var(--size-30), var(--size-40), var(--size-80));
+		width: clamp(var(--size-100), var(--size-120), var(--size-200));
+		font-size: clamp(10%, 50% + 1vw, 100%);
+		margin-top: 3rem;
+	}
+
+	.CTA-4 i {
+		padding-right: auto;
+		font-size: clamp(10%, 70% + 1vw, 100%);
+	}
+
+	.price-card-main h4 {
+		margin-top: 0.5rem;
+		color: var(--font-color-base);
+		font-size: clamp(25%, 40% + 1vw, 100%);
+	}
+
+	.pricing-cards-small {
+		margin-top: 4rem;
+		width: 100%;
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+		grid-template-areas:
+			"card-one" "card-two"
+			"card-three" "card-four";
+	}
+
+	.pricing-cards h2 {
+		font-size: clamp(25%, 70% + 1vw, 150%);
+	}
+
+	.pricing-cards h3 {
+		font-size: clamp(25%, 50% + 1vw, 150%);
+	}
+
+	.price-card-three h2 > span {
+		font-size: clamp(25%, 30% + 1vw, 150%);
+	}
+
+	.price-card-one,
+	.price-card-two,
+	.price-card-three,
+	.price-card-four {
+		padding: clamp(0.25rem, 0.5rem + 1vw, 2rem);
+		height: 10rem;
+	}
+
+	/* Hire and form section controls ---------------------------------------------------------------- */
+	.hire-form-area {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		min-height: 90vh;
+		padding: 0;
+	}
+
+	.hire-area {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hire-us-partOne,
+	.hire-us-partTwo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.hire-us-partOne > h2 {
+		font-size: var(--fluid-size-3);
+	}
+
+	.hire-us-partOne > h3 {
+		font-size: var(--fluid-size-0);
+	}
+
+	.hire-us-partOne > h4 {
+		width: 100%;
+		font-size: var(--fluid-size-0);
+		font-weight: 400;
+	}
+
+	.hire-us-partTwo > h2 {
+		font-size: var(--fluid-size-1);
+	}
+
+	.hire-us-partTwo > h4 {
+		font-size: var(--fluid-size--1);
+		margin-top: 0;
+	}
+
+	.hire-us-partTwo img {
+		margin-bottom: 3rem;
+	}
+
+	.form-area {
+		border-radius: 0.75rem;
+		margin-bottom: 4rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.all-inputs > h3 {
+		font-size: var(--fluid-size-1);
+		font-weight: 550;
+	}
+
+	.inputOne,
+	.inputTwo,
+	.inputThree,
+	.inputFour,
+	.inputFive,
+	.inputSix,
+	.inputSeven {
+		font-weight: 400;
+		width: calc(100% - 0.5rem);
+	}
+
+	.marketing-emails span {
+		font-size: var(--fluid-size--2);
+	}
+
+	.policies {
+		width: 100%;
+		text-align: center;
+	}
+
+	.policies a {
+		margin: 0 0.5rem 0 0.5rem;
+		font-size: var(--fluid-size--2);
+	}
+
+	.all-inputs .CTA-5 {
+		min-height: clamp(var(--size-40), var(--size-40), var(--size-80));
+		width: clamp(var(--size-100), var(--size-120), var(--size-200));
+		font-size: clamp(25%, 50% + 1vw, 150%);
+	}
+
+	/* footer section controls ---------------------------------------------------------------- */
+	footer {
+		min-height: 100vh;
+	}
+
+	.logo-and-options {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-navigator {
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+		gap: 3rem;
+		width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	.footer-navigator h3 {
+		font-weight: 700;
+		font-size: clamp(10%, 70% + 1vw, 150%);
+	}
+
+	.footer-navigator ul li {
+		font-size: clamp(10%, 50% + 1vw, 100%);
+		padding-bottom: 0.5rem;
+	}
+
+	.footer-navigator ul li > span {
+		color: var(--white);
+		font-size: 70%;
+		border-radius: 0.125rem;
+	}
+
+	.privacy-and-media {
+		flex-direction: column;
+	}
+
+	.privacy-path h5 {
+		font-weight: 400;
+	}
+
+	.social-media {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social-media-icons {
+		display: flex;
+		width: 100%;
+	}
+
+	.social-media a > i {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+		font-size: var(--fluid-size-4);
+	}
+
+	.social-media > select {
+		margin-top: 1rem;
+	}
+
+	.all-rights-reserved h6 {
+		width: 100%;
+		font-size: clamp(10%, 40% + 1vw, 100%);
+	}
+}
