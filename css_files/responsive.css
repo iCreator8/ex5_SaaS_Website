@@ -26,8 +26,8 @@
 	}
 }
 
-/* Screens 767px and above and below 1025px  */
-@media (min-width: 767px) and (max-width: 1025px) {
+/* Screens 768px and above and below 1025px  */
+@media (min-width: 768px) and (max-width: 1025px) {
 	/* Drop down Menu controls here  ----------------------------------------------------------------*/
 	.navbar-toggler {
 		display: block;
@@ -163,8 +163,24 @@
 		min-height: 85vh;
 	}
 
+	.benefit-texts h2 {
+		font-size: var(--fluid-size-2);
+	}
+
 	.benefit-cards {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.benefit-cards h4 {
+		font-size: var(--fluid-size-0);
+	}
+
+	.benefit-cards p {
+		font-size: var(--fluid-size--2);
+	}
+
+	.benefit-cards h4 > a {
+		font-size: var(--fluid-size--2);
 	}
 
 	/* Video Section controls starts here ---------------------------------------------------------------- */
@@ -326,8 +342,8 @@
 	}
 }
 
-/* Screens 320px and above and below 768px ---------------------------------------------------------------- */
-@media (min-width: 320px) and (max-width: 768px) {
+/* Screens 320px and above and below 767px ------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 767px) {
 	/* Drop down Menu controls here  */
 	.navbar img {
 		height: 2.5rem;
@@ -499,15 +515,15 @@
 	}
 
 	.benefit-cards h4 {
-		font-size: var(--fluid-size-0);
+		font-size: var(--fluid-size-1);
 	}
 
 	.benefit-cards p {
-		font-size: var(--fluid-size--1);
+		font-size: var(--fluid-size-0);
 	}
 
 	.benefit-cards h4 > a {
-		font-size: var(--fluid-size--2);
+		font-size: var(--fluid-size--1);
 	}
 
 	/* Video Section controls starts here ---------------------------------------------------------------- */
@@ -597,9 +613,10 @@
 
 	.why-front-flow h3 {
 		width: 100%;
-		font-size: var(--fluid-size-0);
+		font-size: var(--fluid-size-1);
 		position: relative;
 		margin-top: auto;
+		margin-bottom: auto;
 		padding-left: 10%;
 		text-align: start;
 	}
@@ -653,6 +670,10 @@
 	/* Company Icons controls area ---------------------------------------------------------------- */
 	.company-icons {
 		min-height: 50vh;
+	}
+
+	.company-icons h2 {
+		font-size: var(--fluid-size-1);
 	}
 
 	.logos-area {
